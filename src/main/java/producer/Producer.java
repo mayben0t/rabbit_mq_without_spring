@@ -17,7 +17,7 @@ public class Producer {
         Channel channel = connection.createChannel();
 //        channel.basicPublish(QUEUE_NAME,"/",false,false,null,"zzzzzzzzzzzz".getBytes());
         channel.queueDeclare(QUEUE_NAME, false, false, false, null);
-        channel.basicPublish("",QUEUE_NAME,null,"zzzzzzzzzz".getBytes());
+        channel.basicPublish("",QUEUE_NAME,null,"可能我也会想呢".getBytes());
         channel.close();
         connection.close();
 
